@@ -1,0 +1,3 @@
+Am preluat framework-ul oferit de alljoyn si servicoul AllJoynService de pe site-ul lor si am implementat un chat prin conexiune peer-to-peer.
+Telefoanele trebuie sa fie in aceasi retea pentru a functiona chat-ul. 
+Urmarind pasii de pe site, am implementat functiile prezente in ChatApplication.java si am creat o interfata grafica
