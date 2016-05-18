@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andreea.finalchatandsend">
+
+    <!-- Permission required to use the TCP transport -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- Permission required to use the Bluetooth transport -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- Permission to access files in photos -->
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Take phone ID -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name = "ChatApplication"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Create a channel -->
+        <activity
+            android:name=".CreateChannel"
+            android:label="FinalChatAndSend" />
+
+
+        <!-- Access phone photos, music, files -->
+        <activity
+            android:name=".MainTransfer"
+            android:label="FinalChatAndSend" />
+        <activity
+            android:name=".ChannelListActivity"
+            android:label="FinalChatAndSend" />
+        <activity
+            android:name=".MessageManagerActivity"
+            android:label="@string/title_activity_message_manager"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:label = "@string/title_activity_message_manager"
+            android:name=".LeaveChannelsActivity"/>
+        <activity
+            android:name=".JoinChannelActivity"
+            android:label = "@string/title_activity_message_manager"
+            >
+
+        </activity>
+
+
+<service android:name="AllJoynService">
+
+
+</service>
+
+    </application>
+
+</manifest>

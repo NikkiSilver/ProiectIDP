@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a channel from the list below"
+        />
+
+    <ListView
+        android:id="@+id/useJoinChannelList"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:transcriptMode="alwaysScroll"
+        android:clickable="true"
+        />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height= "50dp"
+        android:id = "@+id/listbuttonback"
+        android:text = "Back"
+        />
+
+</LinearLayout>

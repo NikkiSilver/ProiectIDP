@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="49dp"
+        android:text= "Select what type of file you wish to send"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id = "@+id/musicbutton"
+        android:text = "MUSIC"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id = "@+id/filebutton"
+        android:text = "FILES"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id = "@+id/photosbutton"
+        android:text = "Photos"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id = "@+id/backbutton"
+        android:text = "Back"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
